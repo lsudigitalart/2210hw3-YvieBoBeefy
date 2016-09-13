@@ -4,10 +4,6 @@ function setup() {
   createCanvas(1350, 300);
   background(154, 0, 255);
 
-stroke(98, 255, 84, 190);
-  strokeWeight(3);
-     line(0, 105, 1350, 105);
-
   for (var y = 0; y <= height; y += 10) {
     for (var z = 0; z <= width; z += 10) {
      stroke(213, 255, 194, 50);
@@ -34,9 +30,11 @@ stroke(98, 255, 84, 190);
     fill(255, 173, 211, 200);
       ellipse(x + 10, 60, 10);
       rect(x/2 + 7, 207, 10, 10);
+      rect(x/2 + 7, 100, 10, 10);
     fill(84, 184, 255, 200);
       ellipse(x + 5, 210, 100);
     fill(98, 255, 84, 200);
+     noStroke();
       ellipse(x + 10, 80, 30);
    stroke(255, 173, 211, 200);
     strokeWeight(5);
